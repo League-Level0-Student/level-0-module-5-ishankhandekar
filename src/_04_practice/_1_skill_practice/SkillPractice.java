@@ -46,14 +46,22 @@ public class SkillPractice {
 
 	void skill3() {// Write a random number less than 20
 		Random randy = new Random();
+		int difference =(randy.nextInt(20));
+		int difference2 = (randy.nextInt(10));
 		System.out.println(randy.nextInt(20));
+		System.out.println(randy.nextInt(10));
 	}
 
 	void skill4() {// Write a loop to print every third number between 1 and 30 to the console
-
+		
 	}
 
 	void skill5() {// Write a loop to print every third number between 1 and 30 to the console
+		// In a pop-up, ask the user for the name of their school 
+String schoolName = JOptionPane.showInputDialog("what is the name of your school?");
 
+
+		// In another pop-up, tell the user, that their school is a fantastic school.// You must include the name of the school in the message. 
+JOptionPane.showMessageDialog(null, schoolName + " is the best school in the world.");
 	}
 }
