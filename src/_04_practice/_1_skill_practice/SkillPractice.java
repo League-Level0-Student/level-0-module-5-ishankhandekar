@@ -8,10 +8,11 @@ public class SkillPractice {
 	public static void main(String[] args) {
 
 		SkillPractice skills = new SkillPractice();
+		skills.skill4();
 		skills.skill1();
 		skills.skill2();
 		skills.skill3();
-		skills.skill4();
+		
 		skills.skill5();
 	}
 
@@ -45,15 +46,22 @@ public class SkillPractice {
 	}
 
 	void skill3() {// Write a random number less than 20
+		System.out.println("write a random number less than 20");
 		Random randy = new Random();
 		int difference =(randy.nextInt(20));
 		int difference2 = (randy.nextInt(10));
-		System.out.println(randy.nextInt(20));
-		System.out.println(randy.nextInt(10));
+		System.out.println(difference);
+		System.out.println(difference2);
+		System.out.println(difference - difference2);
 	}
 
 	void skill4() {// Write a loop to print every third number between 1 and 30 to the console
-		
+		String sandiego = JOptionPane.showInputDialog("which city do you live in?");
+		if (sandiego.equals("San Diego")) {
+			JOptionPane.showMessageDialog(null, "You live in America's Finest City ");
+		}else {
+			JOptionPane.showMessageDialog(null, "You should move to San Diego");
+		}
 	}
 
 	void skill5() {// Write a loop to print every third number between 1 and 30 to the console
